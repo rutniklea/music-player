@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="img/ABBA.jpg" alt="..">
+        </div>
+        <h2 id="title">Dancing Queen</h2>
+        <h3 id="artist">Abba</h3>
+        <audio src="music/ABBA.mp3"></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress">
+                <div class="duration-wrapper">
+                    <span id="current-time">0:00</span>
+                    <span id="duration" >03:54</span>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+        <!-- Volume -->
+        <div class="volume-control">
+            <button id="volumeDownBtn"><i class="fas fa-volume-down"></i></button>
+            <button id="volumeUpBtn"><i class="fas fa-volume-up"></i></button>
+            <button id="muteBtn"><i class="fas fa-volume-mute"></i></button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        Copyright © 2023 Design by LR. All Rights Reserved.
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
